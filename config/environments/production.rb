@@ -62,7 +62,7 @@ Rails.application.configure do
    config.action_mailer.deliver_method = :smtp
    host = 'https://stormy-meadow-2021.herokuapp.com'
    config.action_mailer.default_url_options = { host: host }
-   Actionmailer::Base.smtp_settings = {
+   ActionMailer::Base.smtp_settings = {
     :address => 'smtp.sendgrid.net',
     :port => '587',
     :authentication => :plain,
